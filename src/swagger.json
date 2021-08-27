@@ -1,0 +1,105 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Banco de Currículos Jobsnet",
+        "description": "api para cadastro de candidatos as vagas de emprego na Jobsnet",
+        "version": "0.0.1"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:5000",
+            "description": "Ambiente de desenvolvimento"
+        }
+    ],
+    "paths": {
+        "/register": {
+            "post": {
+                "summary": "Cadastro de candidato",
+                "description": "Rota de cadastro de usuário, recebe: nome, vaga, data de nascimento, estado civil, genêro, email e cep",
+                "tags": [
+                    "candidato"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "identity": {
+                                        "type": "string"
+                                    },
+                                    "cpf": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "birthDate": {
+                                        "type": "string"
+                                    },
+                                    "phone": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "gender": {
+                                        "type": "string"
+                                    },
+                                    "cep": {
+                                        "type": "string"
+                                    },
+                                    "street": {
+                                        "type": "string"
+                                    },
+                                    "number": {
+                                        "type": "string"
+                                    },
+                                    "neighborhood": {
+                                        "type": "string"
+                                    },
+                                    "city": {
+                                        "type": "string"
+                                    },
+                                    "state": {
+                                        "type": "string"
+                                    },
+                                    "maritalStatus": {
+                                        "type": "string"
+                                    },
+                                    "hasVehicle": {
+                                        "type": "boolean"
+                                    },
+                                    "hasLicence": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "candidato": {
+                                    "value": {
+                                        "identity": "0000000000",
+                                        "cpf": "000.000.000-00",
+                                        "name": "Fulano",
+                                        "birthDate": "00/00/0000",
+                                        "phone": "99 99999-9999",
+                                        "email": "fulano@email.com",
+                                        "gender": "Masculino",
+                                        "cep": "00000-000",
+                                        "street": "Rua dos Fulanos",
+                                        "number": "50",
+                                        "neighborhood": "Centro",
+                                        "city": "São Paulo",
+                                        "state": "SP",
+                                        "maritalStatus": "Solteiro",
+                                        "hasVehicle": true,
+                                        "hasLicence": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
