@@ -6,6 +6,7 @@ const routes = require('./routes');
 const cors = require('cors');
 
 const app = express();
+const port = process.env.PORT || 8080;
 
 require('dotenv/config');
 // const db_pass = process.env.DB_PASS
@@ -21,9 +22,9 @@ app.use(cors())
 app.use(express.json());
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(routes);
-app.listen('5000', () => {
+app.listen(port, () => {
     console.log('====================================');    
-    console.log(`Server rodando na porta 5000`);
+    console.log(`Server rodando na porta ${port}`);
     console.log('Pressione ctrl+C para desligar o servidor');
     console.log('====================================');
 });
