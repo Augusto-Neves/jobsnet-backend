@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const swaggerUI = require('swagger-ui-express');
 const swaggerDocs = require('./swagger.json');
 const routes = require('./routes');
-// const cors = require('cors');
+const cors = require('cors');
 
 const app = express();
 
@@ -17,12 +17,13 @@ mongoose.connect(`mongodb+srv://${db_user}:${db_pass}@banco-de-curriculos.nlxji.
     useUnifiedTopology: true
 })
 
-// app.use(cors)
+app.use(cors())
 app.use(express.json());
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 app.use(routes);
 app.listen('5000', () => {
     console.log('====================================');    
-    console.log('Server rodando na porta 5000');
+    console.log(`Server rodando na porta 5000`);
+    console.log('Pressione ctrl+C para desligar o servidor');
     console.log('====================================');
-})
+});

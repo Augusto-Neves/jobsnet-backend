@@ -33,10 +33,22 @@
                                     "name": {
                                         "type": "string"
                                     },
+                                    "jobOpportunity": {
+                                        "type": "string"
+                                    },
                                     "birthDate": {
                                         "type": "string"
                                     },
-                                    "phone": {
+                                    "phone1": {
+                                        "type": "string"
+                                    },
+                                    "phone2": {
+                                        "type": "string"
+                                    },
+                                    "cellPhone": {
+                                        "type": "string"
+                                    },
+                                    "linkedin": {
                                         "type": "string"
                                     },
                                     "email": {
@@ -66,10 +78,10 @@
                                     "maritalStatus": {
                                         "type": "string"
                                     },
-                                    "hasVehicle": {
+                                    "hasLicence": {
                                         "type": "boolean"
                                     },
-                                    "hasLicence": {
+                                    "hasVehicle": {
                                         "type": "boolean"
                                     }
                                 }
@@ -80,8 +92,12 @@
                                         "identity": "0000000000",
                                         "cpf": "000.000.000-00",
                                         "name": "Fulano",
+                                        "jobOpportunity": "Frontend",
                                         "birthDate": "00/00/0000",
-                                        "phone": "99 99999-9999",
+                                        "phone1": "99 99999-9999",
+                                        "phone2": "",
+                                        "cellPhone": "99 8888-8888",
+                                        "linkedin": "meulindkedin.com",
                                         "email": "fulano@email.com",
                                         "gender": "Masculino",
                                         "cep": "00000-000",
@@ -91,8 +107,8 @@
                                         "city": "São Paulo",
                                         "state": "SP",
                                         "maritalStatus": "Solteiro",
-                                        "hasVehicle": true,
-                                        "hasLicence": true
+                                        "hasLicence": true,
+                                        "hasVehicle": true
                                     }
                                 }
                             }

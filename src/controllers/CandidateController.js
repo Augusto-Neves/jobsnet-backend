@@ -6,8 +6,12 @@ module.exports = {
             identity,
             cpf,
             name,
+            jobOpportunity,
             birthDate,
-            phone,
+            phone1,
+            phone2,
+            cellPhone,
+            linkedin,
             email,
             gender,
             cep,
@@ -26,8 +30,12 @@ module.exports = {
         newCandidate.identity = identity;
         newCandidate.cpf = cpf;
         newCandidate.name = name;
+        newCandidate.jobOpportunity = jobOpportunity;
         newCandidate.birthDate = birthDate;
-        newCandidate.phone = phone;
+        newCandidate.phone1 = phone1;
+        newCandidate.phone2 = phone2;
+        newCandidate.cellPhone = cellPhone;
+        newCandidate.linkedin = linkedin;
         newCandidate.email = email;
         newCandidate.gender = gender;
         newCandidate.cep = cep;
