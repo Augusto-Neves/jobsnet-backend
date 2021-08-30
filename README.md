@@ -27,8 +27,8 @@ Primeiro de tudo você precisa ter o `git`,`node` e `yarn` instalados na sua má
 
 Depois de instalados, clone o projeto e acesse a pasta do mesmo.
 ```bash
-$ git clone https://github.com/Augusto-Neves/letmeask
-$ cd letmeask
+$ git clone https://github.com/Augusto-Neves/jobsnet-backend
+$ cd jobsnet-backend
 ```
 Para iniciá-lo, siga os passos abaixo:
 ```bash
