@@ -8,7 +8,7 @@
     "servers": [
         {
             "url": "https://backendjobsnet.herokuapp.com/",
-            "description": "Ambiente de desenvolvimento"
+            "description": "Ambiente de Produção"
         }
     ],
     "paths": {

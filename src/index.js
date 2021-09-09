@@ -4,16 +4,16 @@ const swaggerUI = require('swagger-ui-express');
 const swaggerDocs = require('./swagger.json');
 const routes = require('./routes');
 const cors = require('cors');
+require('dotenv/config');
 
 const app = express();
 const port = process.env.PORT || 8080;
 
-require('dotenv/config');
-// const db_pass = process.env.DB_PASS
-// const db_name = process.env.DB_NAME
-// const db_user = process.env.DB_USER
+const db_pass = process.env.DB_PASS
+const db_name = process.env.DB_NAME
+const db_user = process.env.DB_USER
 
-mongoose.connect(`mongodb+srv://jobs_net_user:FWYB-RRmZ3DQKt9@banco-de-curriculos.nlxji.mongodb.net/banco-de-curriculos?retryWrites=true&w=majority`, {
+mongoose.connect(`mongodb+srv://${db_user}:${db_pass}@${db_name}.nlxji.mongodb.net/${db_name}?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
